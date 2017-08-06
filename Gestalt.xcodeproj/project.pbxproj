@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B17BD171F379D4F00F109D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD161F379D4F00F109D6 /* AppDelegate.swift */; };
+		3B17BD191F379D4F00F109D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD181F379D4F00F109D6 /* ViewController.swift */; };
+		3B17BD1C1F379D4F00F109D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD1A1F379D4F00F109D6 /* Main.storyboard */; };
+		3B17BD1E1F379D4F00F109D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD1D1F379D4F00F109D6 /* Assets.xcassets */; };
+		3B17BD211F379D4F00F109D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD1F1F379D4F00F109D6 /* LaunchScreen.storyboard */; };
+		E995DD533684219EEA432F67 /* Pods_Gestalt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B17BD131F379D4F00F109D6 /* Gestalt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gestalt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B17BD161F379D4F00F109D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B17BD181F379D4F00F109D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B17BD1B1F379D4F00F109D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B17BD1D1F379D4F00F109D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B17BD201F379D4F00F109D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B17BD221F379D4F00F109D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509820DDF305EBAEAAAFF3C6 /* Pods-Gestalt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.debug.xcconfig"; sourceTree = "<group>"; };
+		79CB998A8B86C3FD4DD0F9C1 /* Pods-Gestalt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.release.xcconfig"; sourceTree = "<group>"; };
+		E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gestalt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B17BD101F379D4F00F109D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E995DD533684219EEA432F67 /* Pods_Gestalt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B17BD0A1F379D4F00F109D6 = {
+			isa = PBXGroup;
+			children = (
+				3B17BD151F379D4F00F109D6 /* Gestalt */,
+				3B17BD141F379D4F00F109D6 /* Products */,
+				AB0F3FF0B17D1A32FBFC1A5F /* Pods */,
+				F9C03D5D75726AF57BCF5380 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B17BD141F379D4F00F109D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD131F379D4F00F109D6 /* Gestalt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B17BD151F379D4F00F109D6 /* Gestalt */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD161F379D4F00F109D6 /* AppDelegate.swift */,
+				3B17BD181F379D4F00F109D6 /* ViewController.swift */,
+				3B17BD1A1F379D4F00F109D6 /* Main.storyboard */,
+				3B17BD1D1F379D4F00F109D6 /* Assets.xcassets */,
+				3B17BD1F1F379D4F00F109D6 /* LaunchScreen.storyboard */,
+				3B17BD221F379D4F00F109D6 /* Info.plist */,
+			);
+			path = Gestalt;
+			sourceTree = "<group>";
+		};
+		AB0F3FF0B17D1A32FBFC1A5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				509820DDF305EBAEAAAFF3C6 /* Pods-Gestalt.debug.xcconfig */,
+				79CB998A8B86C3FD4DD0F9C1 /* Pods-Gestalt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9C03D5D75726AF57BCF5380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B17BD121F379D4F00F109D6 /* Gestalt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B17BD251F379D4F00F109D6 /* Build configuration list for PBXNativeTarget "Gestalt" */;
+			buildPhases = (
+				2071E10C0A8B6F693CA60C8F /* [CP] Check Pods Manifest.lock */,
+				3B17BD0F1F379D4F00F109D6 /* Sources */,
+				3B17BD101F379D4F00F109D6 /* Frameworks */,
+				3B17BD111F379D4F00F109D6 /* Resources */,
+				AD958D439E5E5F4749EB15EE /* [CP] Embed Pods Frameworks */,
+				AFDE78B5555589B3DB3D20A3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gestalt;
+			productName = Gestalt;
+			productReference = 3B17BD131F379D4F00F109D6 /* Gestalt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B17BD0B1F379D4F00F109D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alexey Chekanov";
+				TargetAttributes = {
+					3B17BD121F379D4F00F109D6 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = JH6R8SSABL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3B17BD0E1F379D4F00F109D6 /* Build configuration list for PBXProject "Gestalt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B17BD0A1F379D4F00F109D6;
+			productRefGroup = 3B17BD141F379D4F00F109D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B17BD121F379D4F00F109D6 /* Gestalt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B17BD111F379D4F00F109D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B17BD211F379D4F00F109D6 /* LaunchScreen.storyboard in Resources */,
+				3B17BD1E1F379D4F00F109D6 /* Assets.xcassets in Resources */,
+				3B17BD1C1F379D4F00F109D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2071E10C0A8B6F693CA60C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD958D439E5E5F4749EB15EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDE78B5555589B3DB3D20A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B17BD0F1F379D4F00F109D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B17BD191F379D4F00F109D6 /* ViewController.swift in Sources */,
+				3B17BD171F379D4F00F109D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B17BD1A1F379D4F00F109D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B17BD1B1F379D4F00F109D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B17BD1F1F379D4F00F109D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B17BD201F379D4F00F109D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B17BD231F379D4F00F109D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B17BD241F379D4F00F109D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B17BD261F379D4F00F109D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509820DDF305EBAEAAAFF3C6 /* Pods-Gestalt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JH6R8SSABL;
+				INFOPLIST_FILE = Gestalt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.T-T.Gestalt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3B17BD271F379D4F00F109D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CB998A8B86C3FD4DD0F9C1 /* Pods-Gestalt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JH6R8SSABL;
+				INFOPLIST_FILE = Gestalt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.T-T.Gestalt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B17BD0E1F379D4F00F109D6 /* Build configuration list for PBXProject "Gestalt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B17BD231F379D4F00F109D6 /* Debug */,
+				3B17BD241F379D4F00F109D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B17BD251F379D4F00F109D6 /* Build configuration list for PBXNativeTarget "Gestalt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B17BD261F379D4F00F109D6 /* Debug */,
+				3B17BD271F379D4F00F109D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B17BD0B1F379D4F00F109D6 /* Project object */;
+}

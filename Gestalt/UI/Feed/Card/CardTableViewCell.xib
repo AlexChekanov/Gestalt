@@ -17,7 +17,45 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b78-HP-ckQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucO-26-yC7">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="43.5"/>
+                                <color key="backgroundColor" red="0.8940553617" green="0.55275666700000003" blue="0.17397004660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NNy-ab-r3w">
+                                <rect key="frame" x="80" y="0.0" width="80" height="43.5"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26y-kE-vsq">
+                                <rect key="frame" x="160" y="0.0" width="80" height="43.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfF-La-l6m">
+                                <rect key="frame" x="240" y="0.0" width="80" height="43.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="b78-HP-ckQ" secondAttribute="trailing" id="3Np-41-SU9"/>
+                    <constraint firstAttribute="bottom" secondItem="b78-HP-ckQ" secondAttribute="bottom" id="Dni-Xp-MW2"/>
+                    <constraint firstItem="b78-HP-ckQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GKZ-yK-QzY"/>
+                    <constraint firstItem="b78-HP-ckQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="V8J-lS-Hku"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicator" destination="NNy-ab-r3w" id="0KV-rc-gmC"/>
+                <outlet property="briefLabel" destination="26y-kE-vsq" id="Rof-J3-W4E"/>
+                <outlet property="dueLabel" destination="FfF-La-l6m" id="2LC-Dq-Hs9"/>
+                <outlet property="imageContainer" destination="ucO-26-yC7" id="N7z-j0-uZu"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

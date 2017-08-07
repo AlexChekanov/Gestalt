@@ -6,7 +6,7 @@ use_frameworks!
 target 'Gestalt' do
 
 pod 'Firebase/Core'
-pod 'Firebase/AdMob'
+#pod 'Firebase/AdMob'
 pod 'Firebase/Messaging'
 pod 'Firebase/Database'
 pod 'Firebase/Invites'

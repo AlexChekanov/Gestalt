@@ -45,7 +45,7 @@ class DataLayerImpl: DataLayer {
 extension DataLayerImpl {
     
     fileprivate func loadTasksFromDB() -> [Task] {
-        let sortOn = NSSortDescriptor(key: "name", ascending: true)
+        let sortOn = NSSortDescriptor(key: "brief", ascending: true)
         
         let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
         fetchRequest.sortDescriptors = [sortOn]

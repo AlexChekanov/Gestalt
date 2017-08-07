@@ -1,7 +1,4 @@
 PODS:
-  - Firebase/AdMob (4.0.4):
-    - Firebase/Core
-    - Google-Mobile-Ads-SDK (= 7.21.0)
   - Firebase/Auth (4.0.4):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
@@ -81,7 +78,6 @@ PODS:
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - Google-Mobile-Ads-SDK (7.21.0)
   - GoogleAPIClientForREST (1.3.0):
     - GoogleAPIClientForREST/Core (= 1.3.0)
     - GTMSessionFetcher (>= 1.1.7)
@@ -137,7 +133,6 @@ PODS:
     - Swinject (~> 2.0)
 
 DEPENDENCIES:
-  - Firebase/AdMob
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Crash
@@ -166,7 +161,6 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 227406c05b0dc9290702d2e9f18ab5528f0c2cf2
   FirebaseRemoteConfig: 328244399f64226cfdfa32efee596bb010ef5665
   FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
-  Google-Mobile-Ads-SDK: 4a6f1b43c8cc0e1e95a3b59d9f52a01671c6f9f3
   GoogleAPIClientForREST: bf724227a6ad1459aab09b73800aad9184a0f64c
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
@@ -180,6 +174,6 @@ SPEC CHECKSUMS:
   Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
   SwinjectStoryboard: 4c71c25f312322844d39ee06f0f523db7b9b10a3
 
-PODFILE CHECKSUM: acd3bbc15136f09617a8f89d8d2d0c740b1c30f0
+PODFILE CHECKSUM: 1e988f0885587297d52b6139f4c0664bd1d97040
 
 COCOAPODS: 1.2.0

@@ -8,21 +8,81 @@
 
 /* Begin PBXBuildFile section */
 		3B17BD171F379D4F00F109D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD161F379D4F00F109D6 /* AppDelegate.swift */; };
-		3B17BD191F379D4F00F109D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD181F379D4F00F109D6 /* ViewController.swift */; };
 		3B17BD1C1F379D4F00F109D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD1A1F379D4F00F109D6 /* Main.storyboard */; };
 		3B17BD1E1F379D4F00F109D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD1D1F379D4F00F109D6 /* Assets.xcassets */; };
 		3B17BD211F379D4F00F109D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD1F1F379D4F00F109D6 /* LaunchScreen.storyboard */; };
+		3B17BD381F37A2FA00F109D6 /* ModelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD371F37A2FA00F109D6 /* ModelLayer.swift */; };
+		3B17BD3A1F37A34B00F109D6 /* TranslationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD391F37A34B00F109D6 /* TranslationLayer.swift */; };
+		3B17BD3C1F37A36500F109D6 /* TaskTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD3B1F37A36500F109D6 /* TaskTranslator.swift */; };
+		3B17BD3F1F37A3C600F109D6 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD3E1F37A3C600F109D6 /* DataLayer.swift */; };
+		3B17BD421F37A3E200F109D6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD401F37A3E200F109D6 /* DataModel.xcdatamodeld */; };
+		3B17BD441F37A3FD00F109D6 /* Task+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD431F37A3FD00F109D6 /* Task+extensions.swift */; };
+		3B17BD461F37A42700F109D6 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD451F37A42700F109D6 /* NetworkLayer.swift */; };
+		3B17BD591F37A70700F109D6 /* FeedViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD571F37A70700F109D6 /* FeedViewControllerPresenter.swift */; };
+		3B17BD5A1F37A70700F109D6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD581F37A70700F109D6 /* FeedViewController.swift */; };
+		3B17BD5E1F37A71400F109D6 /* CardTableViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD5B1F37A71400F109D6 /* CardTableViewCellPresenter.swift */; };
+		3B17BD5F1F37A71400F109D6 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD5C1F37A71400F109D6 /* CardTableViewCell.swift */; };
+		3B17BD601F37A71400F109D6 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD5D1F37A71400F109D6 /* CardTableViewCell.xib */; };
+		3B17BD621F37A82300F109D6 /* DetailViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD611F37A82300F109D6 /* DetailViewControllerPresenter.swift */; };
+		3B17BD641F37A84100F109D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD631F37A84000F109D6 /* DetailViewController.swift */; };
+		3B17BD661F37A8E600F109D6 /* ProcessCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD651F37A8E600F109D6 /* ProcessCollectionViewController.swift */; };
+		3B17BD691F37A92700F109D6 /* StepCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD671F37A92700F109D6 /* StepCollectionViewCell.swift */; };
+		3B17BD6A1F37A92700F109D6 /* StepCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD681F37A92700F109D6 /* StepCollectionViewCell.xib */; };
+		3B17BD6D1F37A98200F109D6 /* BodyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD6C1F37A98200F109D6 /* BodyTableViewController.swift */; };
+		3B17BD701F37A9B700F109D6 /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD6E1F37A9B700F109D6 /* ActionTableViewCell.swift */; };
+		3B17BD711F37A9B700F109D6 /* ActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B17BD6F1F37A9B700F109D6 /* ActionTableViewCell.xib */; };
+		3B17BD741F37A9EF00F109D6 /* RootNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD731F37A9EF00F109D6 /* RootNavigationCoordinator.swift */; };
+		3B17BD761F37AA0600F109D6 /* DependencyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD751F37AA0600F109D6 /* DependencyRegistry.swift */; };
+		3B17BD781F37AA2900F109D6 /* SwinjectStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD771F37AA2900F109D6 /* SwinjectStoryboard+Extensions.swift */; };
+		3B17BD7A1F37ACCF00F109D6 /* TaskDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD791F37ACCF00F109D6 /* TaskDTO.swift */; };
+		3B17BD7C1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD7B1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift */; };
+		3B17BD7E1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD7D1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift */; };
+		3B17BD801F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD7F1F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift */; };
+		3B17BD821F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD811F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift */; };
+		3B17BD871F37D8CB00F109D6 /* GlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD841F37D8CB00F109D6 /* GlobalEnums.swift */; };
+		3B17BD881F37D8CB00F109D6 /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD851F37D8CB00F109D6 /* RowType.swift */; };
+		3B17BD891F37D8CB00F109D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD861F37D8CB00F109D6 /* Extensions.swift */; };
 		E995DD533684219EEA432F67 /* Pods_Gestalt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B17BD131F379D4F00F109D6 /* Gestalt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gestalt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B17BD161F379D4F00F109D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B17BD181F379D4F00F109D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B17BD1B1F379D4F00F109D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B17BD1D1F379D4F00F109D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B17BD201F379D4F00F109D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B17BD221F379D4F00F109D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B17BD371F37A2FA00F109D6 /* ModelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelLayer.swift; path = ModelLayer/ModelLayer.swift; sourceTree = "<group>"; };
+		3B17BD391F37A34B00F109D6 /* TranslationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationLayer.swift; path = ModelLayer/Translation/TranslationLayer.swift; sourceTree = "<group>"; };
+		3B17BD3B1F37A36500F109D6 /* TaskTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTranslator.swift; path = ModelLayer/Translation/TaskTranslator.swift; sourceTree = "<group>"; };
+		3B17BD3E1F37A3C600F109D6 /* DataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataLayer.swift; path = ModelLayer/Database/DataLayer.swift; sourceTree = "<group>"; };
+		3B17BD411F37A3E200F109D6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		3B17BD431F37A3FD00F109D6 /* Task+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+extensions.swift"; path = "ModelLayer/Database/Task+extensions.swift"; sourceTree = "<group>"; };
+		3B17BD451F37A42700F109D6 /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkLayer.swift; path = ModelLayer/Network/NetworkLayer.swift; sourceTree = "<group>"; };
+		3B17BD571F37A70700F109D6 /* FeedViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewControllerPresenter.swift; path = UI/Feed/FeedViewControllerPresenter.swift; sourceTree = "<group>"; };
+		3B17BD581F37A70700F109D6 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = UI/Feed/FeedViewController.swift; sourceTree = "<group>"; };
+		3B17BD5B1F37A71400F109D6 /* CardTableViewCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardTableViewCellPresenter.swift; path = UI/Feed/Card/CardTableViewCellPresenter.swift; sourceTree = "<group>"; };
+		3B17BD5C1F37A71400F109D6 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardTableViewCell.swift; path = UI/Feed/Card/CardTableViewCell.swift; sourceTree = "<group>"; };
+		3B17BD5D1F37A71400F109D6 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardTableViewCell.xib; path = UI/Feed/Card/CardTableViewCell.xib; sourceTree = "<group>"; };
+		3B17BD611F37A82300F109D6 /* DetailViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewControllerPresenter.swift; path = UI/Details/DetailViewControllerPresenter.swift; sourceTree = "<group>"; };
+		3B17BD631F37A84000F109D6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = UI/Details/DetailViewController.swift; sourceTree = "<group>"; };
+		3B17BD651F37A8E600F109D6 /* ProcessCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcessCollectionViewController.swift; path = UI/Details/Process/ProcessCollectionViewController.swift; sourceTree = "<group>"; };
+		3B17BD671F37A92700F109D6 /* StepCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepCollectionViewCell.swift; path = UI/Details/Process/StepCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B17BD681F37A92700F109D6 /* StepCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StepCollectionViewCell.xib; path = UI/Details/Process/StepCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B17BD6C1F37A98200F109D6 /* BodyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BodyTableViewController.swift; path = UI/Details/Body/BodyTableViewController.swift; sourceTree = "<group>"; };
+		3B17BD6E1F37A9B700F109D6 /* ActionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionTableViewCell.swift; path = UI/Details/Body/ActionTableViewCell.swift; sourceTree = "<group>"; };
+		3B17BD6F1F37A9B700F109D6 /* ActionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActionTableViewCell.xib; path = UI/Details/Body/ActionTableViewCell.xib; sourceTree = "<group>"; };
+		3B17BD731F37A9EF00F109D6 /* RootNavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootNavigationCoordinator.swift; path = NavigationCoordinators/RootNavigationCoordinator.swift; sourceTree = "<group>"; };
+		3B17BD751F37AA0600F109D6 /* DependencyRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyRegistry.swift; path = Dependencies/DependencyRegistry.swift; sourceTree = "<group>"; };
+		3B17BD771F37AA2900F109D6 /* SwinjectStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwinjectStoryboard+Extensions.swift"; path = "Dependencies/SwinjectStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		3B17BD791F37ACCF00F109D6 /* TaskDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskDTO.swift; path = ModelLayer/DTOs/TaskDTO.swift; sourceTree = "<group>"; };
+		3B17BD7B1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BodyTableViewControllerPresenter.swift; path = UI/Details/Body/BodyTableViewControllerPresenter.swift; sourceTree = "<group>"; };
+		3B17BD7D1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionTableViewCellPresenter.swift; path = UI/Details/Body/ActionTableViewCellPresenter.swift; sourceTree = "<group>"; };
+		3B17BD7F1F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepCollectionViewCellPresenter.swift; path = UI/Details/Process/StepCollectionViewCellPresenter.swift; sourceTree = "<group>"; };
+		3B17BD811F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessCollectionViewControllerPresenter.swift; sourceTree = "<group>"; };
+		3B17BD841F37D8CB00F109D6 /* GlobalEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalEnums.swift; sourceTree = "<group>"; };
+		3B17BD851F37D8CB00F109D6 /* RowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowType.swift; sourceTree = "<group>"; };
+		3B17BD861F37D8CB00F109D6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		509820DDF305EBAEAAAFF3C6 /* Pods-Gestalt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.debug.xcconfig"; sourceTree = "<group>"; };
 		79CB998A8B86C3FD4DD0F9C1 /* Pods-Gestalt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.release.xcconfig"; sourceTree = "<group>"; };
 		E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gestalt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,14 +121,180 @@
 		3B17BD151F379D4F00F109D6 /* Gestalt */ = {
 			isa = PBXGroup;
 			children = (
+				3B17BD2D1F37A1E900F109D6 /* NavigationCoordinators */,
+				3B17BD2C1F37A1CC00F109D6 /* Dependencies */,
+				3B17BD2B1F37A1C100F109D6 /* UI */,
+				3B17BD2A1F37A1AE00F109D6 /* ModelLayer */,
+				3B17BD831F37D8A600F109D6 /* SupportingClasses */,
 				3B17BD161F379D4F00F109D6 /* AppDelegate.swift */,
-				3B17BD181F379D4F00F109D6 /* ViewController.swift */,
 				3B17BD1A1F379D4F00F109D6 /* Main.storyboard */,
 				3B17BD1D1F379D4F00F109D6 /* Assets.xcassets */,
 				3B17BD1F1F379D4F00F109D6 /* LaunchScreen.storyboard */,
 				3B17BD221F379D4F00F109D6 /* Info.plist */,
 			);
 			path = Gestalt;
+			sourceTree = "<group>";
+		};
+		3B17BD2A1F37A1AE00F109D6 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD2E1F37A20D00F109D6 /* Translation */,
+				3B17BD2F1F37A21800F109D6 /* Database */,
+				3B17BD311F37A22D00F109D6 /* Network */,
+				3B17BD301F37A22200F109D6 /* DTOs */,
+				3B17BD371F37A2FA00F109D6 /* ModelLayer.swift */,
+			);
+			name = ModelLayer;
+			sourceTree = "<group>";
+		};
+		3B17BD2B1F37A1C100F109D6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD321F37A25A00F109D6 /* Feed */,
+				3B17BD331F37A27000F109D6 /* Details */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3B17BD2C1F37A1CC00F109D6 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD751F37AA0600F109D6 /* DependencyRegistry.swift */,
+				3B17BD771F37AA2900F109D6 /* SwinjectStoryboard+Extensions.swift */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		3B17BD2D1F37A1E900F109D6 /* NavigationCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD731F37A9EF00F109D6 /* RootNavigationCoordinator.swift */,
+			);
+			name = NavigationCoordinators;
+			sourceTree = "<group>";
+		};
+		3B17BD2E1F37A20D00F109D6 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD391F37A34B00F109D6 /* TranslationLayer.swift */,
+				3B17BD3B1F37A36500F109D6 /* TaskTranslator.swift */,
+			);
+			name = Translation;
+			sourceTree = "<group>";
+		};
+		3B17BD2F1F37A21800F109D6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD3D1F37A37E00F109D6 /* CoreData */,
+				3B17BD3E1F37A3C600F109D6 /* DataLayer.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		3B17BD301F37A22200F109D6 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD791F37ACCF00F109D6 /* TaskDTO.swift */,
+			);
+			name = DTOs;
+			sourceTree = "<group>";
+		};
+		3B17BD311F37A22D00F109D6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD451F37A42700F109D6 /* NetworkLayer.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		3B17BD321F37A25A00F109D6 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD361F37A2A100F109D6 /* Card */,
+				3B17BD571F37A70700F109D6 /* FeedViewControllerPresenter.swift */,
+				3B17BD581F37A70700F109D6 /* FeedViewController.swift */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		3B17BD331F37A27000F109D6 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD351F37A29500F109D6 /* Body */,
+				3B17BD341F37A28900F109D6 /* Process */,
+				3B17BD611F37A82300F109D6 /* DetailViewControllerPresenter.swift */,
+				3B17BD631F37A84000F109D6 /* DetailViewController.swift */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		3B17BD341F37A28900F109D6 /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD6B1F37A93400F109D6 /* Step */,
+				3B17BD651F37A8E600F109D6 /* ProcessCollectionViewController.swift */,
+				3B17BD811F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift */,
+			);
+			name = Process;
+			sourceTree = "<group>";
+		};
+		3B17BD351F37A29500F109D6 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD7B1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift */,
+				3B17BD6C1F37A98200F109D6 /* BodyTableViewController.swift */,
+				3B17BD721F37A9BD00F109D6 /* Action */,
+			);
+			name = Body;
+			sourceTree = "<group>";
+		};
+		3B17BD361F37A2A100F109D6 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD5B1F37A71400F109D6 /* CardTableViewCellPresenter.swift */,
+				3B17BD5C1F37A71400F109D6 /* CardTableViewCell.swift */,
+				3B17BD5D1F37A71400F109D6 /* CardTableViewCell.xib */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
+		3B17BD3D1F37A37E00F109D6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD401F37A3E200F109D6 /* DataModel.xcdatamodeld */,
+				3B17BD431F37A3FD00F109D6 /* Task+extensions.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		3B17BD6B1F37A93400F109D6 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD671F37A92700F109D6 /* StepCollectionViewCell.swift */,
+				3B17BD681F37A92700F109D6 /* StepCollectionViewCell.xib */,
+				3B17BD7F1F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift */,
+			);
+			name = Step;
+			sourceTree = "<group>";
+		};
+		3B17BD721F37A9BD00F109D6 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD6E1F37A9B700F109D6 /* ActionTableViewCell.swift */,
+				3B17BD6F1F37A9B700F109D6 /* ActionTableViewCell.xib */,
+				3B17BD7D1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		3B17BD831F37D8A600F109D6 /* SupportingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3B17BD841F37D8CB00F109D6 /* GlobalEnums.swift */,
+				3B17BD851F37D8CB00F109D6 /* RowType.swift */,
+				3B17BD861F37D8CB00F109D6 /* Extensions.swift */,
+			);
+			name = SupportingClasses;
 			sourceTree = "<group>";
 		};
 		AB0F3FF0B17D1A32FBFC1A5F /* Pods */ = {
@@ -152,7 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B17BD211F379D4F00F109D6 /* LaunchScreen.storyboard in Resources */,
+				3B17BD711F37A9B700F109D6 /* ActionTableViewCell.xib in Resources */,
+				3B17BD6A1F37A92700F109D6 /* StepCollectionViewCell.xib in Resources */,
 				3B17BD1E1F379D4F00F109D6 /* Assets.xcassets in Resources */,
+				3B17BD601F37A71400F109D6 /* CardTableViewCell.xib in Resources */,
 				3B17BD1C1F379D4F00F109D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +441,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B17BD191F379D4F00F109D6 /* ViewController.swift in Sources */,
+				3B17BD871F37D8CB00F109D6 /* GlobalEnums.swift in Sources */,
+				3B17BD821F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift in Sources */,
+				3B17BD461F37A42700F109D6 /* NetworkLayer.swift in Sources */,
+				3B17BD7C1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift in Sources */,
+				3B17BD3F1F37A3C600F109D6 /* DataLayer.swift in Sources */,
+				3B17BD7A1F37ACCF00F109D6 /* TaskDTO.swift in Sources */,
+				3B17BD5E1F37A71400F109D6 /* CardTableViewCellPresenter.swift in Sources */,
+				3B17BD891F37D8CB00F109D6 /* Extensions.swift in Sources */,
+				3B17BD781F37AA2900F109D6 /* SwinjectStoryboard+Extensions.swift in Sources */,
+				3B17BD3A1F37A34B00F109D6 /* TranslationLayer.swift in Sources */,
+				3B17BD5A1F37A70700F109D6 /* FeedViewController.swift in Sources */,
+				3B17BD421F37A3E200F109D6 /* DataModel.xcdatamodeld in Sources */,
+				3B17BD381F37A2FA00F109D6 /* ModelLayer.swift in Sources */,
+				3B17BD761F37AA0600F109D6 /* DependencyRegistry.swift in Sources */,
+				3B17BD5F1F37A71400F109D6 /* CardTableViewCell.swift in Sources */,
 				3B17BD171F379D4F00F109D6 /* AppDelegate.swift in Sources */,
+				3B17BD441F37A3FD00F109D6 /* Task+extensions.swift in Sources */,
+				3B17BD801F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift in Sources */,
+				3B17BD7E1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift in Sources */,
+				3B17BD881F37D8CB00F109D6 /* RowType.swift in Sources */,
+				3B17BD691F37A92700F109D6 /* StepCollectionViewCell.swift in Sources */,
+				3B17BD701F37A9B700F109D6 /* ActionTableViewCell.swift in Sources */,
+				3B17BD6D1F37A98200F109D6 /* BodyTableViewController.swift in Sources */,
+				3B17BD661F37A8E600F109D6 /* ProcessCollectionViewController.swift in Sources */,
+				3B17BD621F37A82300F109D6 /* DetailViewControllerPresenter.swift in Sources */,
+				3B17BD641F37A84100F109D6 /* DetailViewController.swift in Sources */,
+				3B17BD591F37A70700F109D6 /* FeedViewControllerPresenter.swift in Sources */,
+				3B17BD741F37A9EF00F109D6 /* RootNavigationCoordinator.swift in Sources */,
+				3B17BD3C1F37A36500F109D6 /* TaskTranslator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +638,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B17BD401F37A3E200F109D6 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B17BD411F37A3E200F109D6 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 3B17BD411F37A3E200F109D6 /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = ModelLayer/Database/DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B17BD0B1F379D4F00F109D6 /* Project object */;
 }

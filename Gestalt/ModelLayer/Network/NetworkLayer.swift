@@ -1,10 +1,22 @@
 import Foundation
+import Firebase
 
 protocol NetworkLayer {
-    func loadFromServer(finished: @escaping (Data) -> Void)
+    
+    func configure ()
+    //func configureFireBase () //finished: @escaping (Data) -> Void)
+//    func loadFromServer(finished: @escaping (Data) -> Void)
 }
-
 class NetworkLayerImpl: NetworkLayer {
+    
+    func configure () {// finished: @escaping (Data) -> Void) {
+        
+        FirebaseApp.configure()
+        FirebaseRef = Database.database().reference()
+
+        
+    }
+    
     func loadFromServer(finished: @escaping (Data) -> Void) {
         print("loading data from server")
         

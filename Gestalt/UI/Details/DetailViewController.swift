@@ -29,7 +29,8 @@ class DetailViewController: UIViewController {
     }
     
     func setupView() {
-        self.theTitle.text = presenter.title
+        
+        //self.theTitle.text = presenter.title
     }
 }
 

@@ -10,7 +10,7 @@ class DetailViewControllerPresenterImpl: DetailViewControllerPresenter {
     
     var task: TaskDTO!
     
-    var title: String { return task.brief! }
+    var title: String { return task.brief ?? "Title" }
 
     init(with task: TaskDTO) {
         self.task = task

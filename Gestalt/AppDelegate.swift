@@ -1,5 +1,13 @@
 import UIKit
 import CoreData
+import Firebase
+
+
+
+// Database
+public var FirebaseRef: DatabaseReference!
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -10,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var dependencyRegistry: DependencyRegistry!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         return true
     }
 }

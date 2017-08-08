@@ -25,13 +25,15 @@ class ModelLayerImpl: ModelLayer {
         func mainWork() {
             
             loadFromDB(from: .local)
+
+            networkLayer.configure () //FireBase(finished: <#(Data) -> Void#>)
             
-            networkLayer.loadFromServer { data in
-                let dtos = self.translationLayer.createTaskDTOsFromJsonData(data)
-                self.dataLayer.save(dtos: dtos, translationLayer: self.translationLayer) {
-                    loadFromDB(from: .network)
-                }
-            }
+//            networkLayer.loadFromServer { data in
+//                let dtos = self.translationLayer.createTaskDTOsFromJsonData(data)
+//                self.dataLayer.save(dtos: dtos, translationLayer: self.translationLayer) {
+//                    loadFromDB(from: .network)
+//                }
+//            }
         }
         
         func loadFromDB(from source: DataSource) {

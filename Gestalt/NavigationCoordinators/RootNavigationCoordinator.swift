@@ -46,9 +46,12 @@ class RootNavigationCoordinatorImpl: NavigationCoordinator {
         let detailViewController = registry.makeDetailViewController(with: task)
         
         // TODO: add Split navigation support
-        
+
+
+        if (rootViewController.navigationController?.splitViewController?.isCollapsed)! {
         rootViewController.navigationController?.pushViewController(detailViewController, animated: true)
-        navState = .atDetails
+            navState = .atDetails}
+        
     }
     
     func showFeed() {

@@ -26,7 +26,8 @@ class ModelLayerImpl: ModelLayer {
             
             loadFromDB(from: .local)
 
-            networkLayer.configure () //FireBase(finished: <#(Data) -> Void#>)
+            //TODO: Check if the network configuration doesn't work
+            networkLayer.configureFirebase() //FireBase(finished: <#(Data) -> Void#>)
             
 //            networkLayer.loadFromServer { data in
 //                let dtos = self.translationLayer.createTaskDTOsFromJsonData(data)

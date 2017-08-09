@@ -3,6 +3,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 import RxDataSources
+import Firebase
 
 class FeedViewController: UIViewController, UITableViewDelegate {
     

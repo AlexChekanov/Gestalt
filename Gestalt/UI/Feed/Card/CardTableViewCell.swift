@@ -100,7 +100,7 @@ extension CardTableViewCell {
 //MARK: - Helper Methods
 extension CardTableViewCell {
     public static var cellId: String {
-        return "CardCell"
+        return "CardTableViewCell"
     }
     
     public static var bundle: Bundle {

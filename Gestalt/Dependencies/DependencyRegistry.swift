@@ -5,7 +5,7 @@ import SwinjectStoryboard
 protocol DependencyRegistry {
     var container: Container { get }
     var navigationCoordinator: NavigationCoordinator! { get }
-    
+        
     // Feed
     typealias RootNavigationCoordinatorMaker = (UIViewController) -> NavigationCoordinator
     func makeRootNavigationCoordinator(rootViewController: UIViewController) -> NavigationCoordinator
@@ -29,15 +29,13 @@ protocol DependencyRegistry {
     
     typealias ActionTableViewCellMaker = (TaskDTO) -> ActionTableViewCell
     func makeActionTableViewCell(for tableView: UITableView, at indexPath: IndexPath, with task: TaskDTO) -> ActionTableViewCell
-
-    
 }
+
 
 class DependencyRegistryImpl: DependencyRegistry {
     
     var container: Container
     var navigationCoordinator: NavigationCoordinator!
-    
     
     init(container: Container) {
         
@@ -138,8 +136,4 @@ class DependencyRegistryImpl: DependencyRegistry {
         let cell = ActionTableViewCell.dequeue(from: tableView, for: indexPath, with: presenter)
         return cell
     }
-    
-    
-    
-    
 }

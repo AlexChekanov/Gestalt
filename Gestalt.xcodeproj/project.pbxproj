@@ -14,9 +14,6 @@
 		3B17BD381F37A2FA00F109D6 /* ModelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD371F37A2FA00F109D6 /* ModelLayer.swift */; };
 		3B17BD3A1F37A34B00F109D6 /* TranslationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD391F37A34B00F109D6 /* TranslationLayer.swift */; };
 		3B17BD3C1F37A36500F109D6 /* TaskTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD3B1F37A36500F109D6 /* TaskTranslator.swift */; };
-		3B17BD3F1F37A3C600F109D6 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD3E1F37A3C600F109D6 /* DataLayer.swift */; };
-		3B17BD421F37A3E200F109D6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD401F37A3E200F109D6 /* DataModel.xcdatamodeld */; };
-		3B17BD441F37A3FD00F109D6 /* Task+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD431F37A3FD00F109D6 /* Task+extensions.swift */; };
 		3B17BD461F37A42700F109D6 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD451F37A42700F109D6 /* NetworkLayer.swift */; };
 		3B17BD591F37A70700F109D6 /* FeedViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD571F37A70700F109D6 /* FeedViewControllerPresenter.swift */; };
 		3B17BD5A1F37A70700F109D6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD581F37A70700F109D6 /* FeedViewController.swift */; };
@@ -43,6 +40,9 @@
 		3B17BD881F37D8CB00F109D6 /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD851F37D8CB00F109D6 /* RowType.swift */; };
 		3B17BD891F37D8CB00F109D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD861F37D8CB00F109D6 /* Extensions.swift */; };
 		3B7EDA081F3B72CF00C1E030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B7EDA071F3B72CF00C1E030 /* GoogleService-Info.plist */; };
+		3B7EDA0B1F3E072600C1E030 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA0A1F3E072600C1E030 /* DataLayer.swift */; };
+		3B7EDA0F1F3E073600C1E030 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA0C1F3E073600C1E030 /* DataModel.xcdatamodeld */; };
+		3B7EDA101F3E073600C1E030 /* Task+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA0E1F3E073600C1E030 /* Task+extensions.swift */; };
 		E995DD533684219EEA432F67 /* Pods_Gestalt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,9 +56,6 @@
 		3B17BD371F37A2FA00F109D6 /* ModelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelLayer.swift; path = ModelLayer/ModelLayer.swift; sourceTree = "<group>"; };
 		3B17BD391F37A34B00F109D6 /* TranslationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationLayer.swift; path = ModelLayer/Translation/TranslationLayer.swift; sourceTree = "<group>"; };
 		3B17BD3B1F37A36500F109D6 /* TaskTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTranslator.swift; path = ModelLayer/Translation/TaskTranslator.swift; sourceTree = "<group>"; };
-		3B17BD3E1F37A3C600F109D6 /* DataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataLayer.swift; path = ModelLayer/Database/DataLayer.swift; sourceTree = "<group>"; };
-		3B17BD411F37A3E200F109D6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		3B17BD431F37A3FD00F109D6 /* Task+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+extensions.swift"; path = "ModelLayer/Database/Task+extensions.swift"; sourceTree = "<group>"; };
 		3B17BD451F37A42700F109D6 /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkLayer.swift; path = ModelLayer/Network/NetworkLayer.swift; sourceTree = "<group>"; };
 		3B17BD571F37A70700F109D6 /* FeedViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewControllerPresenter.swift; path = UI/Feed/FeedViewControllerPresenter.swift; sourceTree = "<group>"; };
 		3B17BD581F37A70700F109D6 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = UI/Feed/FeedViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +82,10 @@
 		3B17BD851F37D8CB00F109D6 /* RowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowType.swift; sourceTree = "<group>"; };
 		3B17BD861F37D8CB00F109D6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3B7EDA071F3B72CF00C1E030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B7EDA091F3B7B7200C1E030 /* Gestalt. ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Gestalt. ToDo.txt"; path = "../../../Library/Mobile Documents/27N4MQEA55~pro~writer/Documents/Gestalt. ToDo.txt"; sourceTree = "<group>"; };
+		3B7EDA0A1F3E072600C1E030 /* DataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataLayer.swift; path = ModelLayer/Data/DataLayer.swift; sourceTree = "<group>"; };
+		3B7EDA0D1F3E073600C1E030 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		3B7EDA0E1F3E073600C1E030 /* Task+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+extensions.swift"; path = "ModelLayer/Data/Task+extensions.swift"; sourceTree = "<group>"; };
 		509820DDF305EBAEAAAFF3C6 /* Pods-Gestalt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.debug.xcconfig"; sourceTree = "<group>"; };
 		79CB998A8B86C3FD4DD0F9C1 /* Pods-Gestalt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.release.xcconfig"; sourceTree = "<group>"; };
 		E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gestalt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +106,7 @@
 		3B17BD0A1F379D4F00F109D6 = {
 			isa = PBXGroup;
 			children = (
+				3B7EDA091F3B7B7200C1E030 /* Gestalt. ToDo.txt */,
 				3B17BD151F379D4F00F109D6 /* Gestalt */,
 				3B17BD141F379D4F00F109D6 /* Products */,
 				AB0F3FF0B17D1A32FBFC1A5F /* Pods */,
@@ -142,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				3B17BD2E1F37A20D00F109D6 /* Translation */,
-				3B17BD2F1F37A21800F109D6 /* Database */,
+				3B17BD2F1F37A21800F109D6 /* Data */,
 				3B17BD311F37A22D00F109D6 /* Network */,
 				3B17BD301F37A22200F109D6 /* DTOs */,
 				3B17BD371F37A2FA00F109D6 /* ModelLayer.swift */,
@@ -185,13 +187,13 @@
 			name = Translation;
 			sourceTree = "<group>";
 		};
-		3B17BD2F1F37A21800F109D6 /* Database */ = {
+		3B17BD2F1F37A21800F109D6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				3B17BD3D1F37A37E00F109D6 /* CoreData */,
-				3B17BD3E1F37A3C600F109D6 /* DataLayer.swift */,
+				3B7EDA0A1F3E072600C1E030 /* DataLayer.swift */,
 			);
-			name = Database;
+			name = Data;
 			sourceTree = "<group>";
 		};
 		3B17BD301F37A22200F109D6 /* DTOs */ = {
@@ -264,8 +266,8 @@
 		3B17BD3D1F37A37E00F109D6 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				3B17BD401F37A3E200F109D6 /* DataModel.xcdatamodeld */,
-				3B17BD431F37A3FD00F109D6 /* Task+extensions.swift */,
+				3B7EDA0C1F3E073600C1E030 /* DataModel.xcdatamodeld */,
+				3B7EDA0E1F3E073600C1E030 /* Task+extensions.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -420,7 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:74949355104:ios:4de0f427a067fa0b\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"gestalt-it-firebase-crashreporting-1so50-06613dd680.json\"\n";
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:522059333766:ios:b58d4fa4a7dbdf54\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"gestalt-5ac7f-firebase-crashreporting-awhw1-9baa8c8ef3.json\"";
 		};
 		AD958D439E5E5F4749EB15EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -460,26 +462,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B17BD871F37D8CB00F109D6 /* GlobalEnums.swift in Sources */,
+				3B7EDA0B1F3E072600C1E030 /* DataLayer.swift in Sources */,
 				3B17BD821F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift in Sources */,
 				3B17BD461F37A42700F109D6 /* NetworkLayer.swift in Sources */,
 				3B17BD7C1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift in Sources */,
-				3B17BD3F1F37A3C600F109D6 /* DataLayer.swift in Sources */,
 				3B17BD7A1F37ACCF00F109D6 /* TaskDTO.swift in Sources */,
 				3B17BD5E1F37A71400F109D6 /* CardTableViewCellPresenter.swift in Sources */,
 				3B17BD891F37D8CB00F109D6 /* Extensions.swift in Sources */,
 				3B17BD781F37AA2900F109D6 /* SwinjectStoryboard+Extensions.swift in Sources */,
 				3B17BD3A1F37A34B00F109D6 /* TranslationLayer.swift in Sources */,
 				3B17BD5A1F37A70700F109D6 /* FeedViewController.swift in Sources */,
-				3B17BD421F37A3E200F109D6 /* DataModel.xcdatamodeld in Sources */,
 				3B17BD381F37A2FA00F109D6 /* ModelLayer.swift in Sources */,
 				3B17BD761F37AA0600F109D6 /* DependencyRegistry.swift in Sources */,
 				3B17BD5F1F37A71400F109D6 /* CardTableViewCell.swift in Sources */,
 				3B17BD171F379D4F00F109D6 /* AppDelegate.swift in Sources */,
-				3B17BD441F37A3FD00F109D6 /* Task+extensions.swift in Sources */,
 				3B17BD801F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift in Sources */,
 				3B17BD7E1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift in Sources */,
 				3B17BD881F37D8CB00F109D6 /* RowType.swift in Sources */,
 				3B17BD691F37A92700F109D6 /* StepCollectionViewCell.swift in Sources */,
+				3B7EDA0F1F3E073600C1E030 /* DataModel.xcdatamodeld in Sources */,
 				3B17BD701F37A9B700F109D6 /* ActionTableViewCell.swift in Sources */,
 				3B17BD6D1F37A98200F109D6 /* BodyTableViewController.swift in Sources */,
 				3B17BD661F37A8E600F109D6 /* ProcessCollectionViewController.swift in Sources */,
@@ -488,6 +489,7 @@
 				3B17BD591F37A70700F109D6 /* FeedViewControllerPresenter.swift in Sources */,
 				3B17BD741F37A9EF00F109D6 /* RootNavigationCoordinator.swift in Sources */,
 				3B17BD3C1F37A36500F109D6 /* TaskTranslator.swift in Sources */,
+				3B7EDA101F3E073600C1E030 /* Task+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,14 +662,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3B17BD401F37A3E200F109D6 /* DataModel.xcdatamodeld */ = {
+		3B7EDA0C1F3E073600C1E030 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3B17BD411F37A3E200F109D6 /* DataModel.xcdatamodel */,
+				3B7EDA0D1F3E073600C1E030 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = 3B17BD411F37A3E200F109D6 /* DataModel.xcdatamodel */;
+			currentVersion = 3B7EDA0D1F3E073600C1E030 /* DataModel.xcdatamodel */;
 			name = DataModel.xcdatamodeld;
-			path = ModelLayer/Database/DataModel.xcdatamodeld;
+			path = ModelLayer/Data/DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

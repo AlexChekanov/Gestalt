@@ -5,6 +5,9 @@ use_frameworks!
 
 target 'Gestalt' do
 
+#pod 'Crashlytics'
+#pod 'Fabric'
+
 pod 'Firebase/Core'
 # pod 'Firebase/AdMob'
 pod 'Firebase/Messaging'

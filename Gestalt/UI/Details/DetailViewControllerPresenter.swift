@@ -3,14 +3,14 @@ import Foundation
 protocol DetailViewControllerPresenter {
     var task: TaskDTO! { get }
     
-    var title: String { get }
+    var title: String? { get }
 }
 
 class DetailViewControllerPresenterImpl: DetailViewControllerPresenter {
     
     var task: TaskDTO!
     
-    var title: String { return task.brief ?? "Title" }
+    var title: String? { return task.brief ?? "Title" }
 
     init(with task: TaskDTO) {
         self.task = task

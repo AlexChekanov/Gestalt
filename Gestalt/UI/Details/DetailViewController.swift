@@ -4,13 +4,17 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var theTitle: UILabel!
     
-    fileprivate var presenter: DetailViewControllerPresenter!
+    var presenter: DetailViewControllerPresenter!
+    
     fileprivate weak var navigationCoordinator: NavigationCoordinator?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        clean()
+        updateData()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,7 +34,22 @@ class DetailViewController: UIViewController {
     
     func setupView() {
         
-        //self.theTitle.text = presenter.title
+        self.view.backgroundColor = .orange
+        
+        //self.navigationController?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        
+    }
+    
+    func clean() {
+        theTitle.text = ""
+    }
+    
+    func updateData () {
+        guard presenter != nil else { return }
+        
+        self.theTitle.text = presenter.title
+        self.title = presenter.title
+
     }
 }
 

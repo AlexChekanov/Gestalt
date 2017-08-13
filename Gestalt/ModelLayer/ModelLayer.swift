@@ -1,5 +1,10 @@
 import Foundation
 
+enum DataSource: String {
+    case local,
+         network
+}
+
 typealias TasksAndSourceBlock = (DataSource, [TaskDTO])->Void
 
 protocol ModelLayer {

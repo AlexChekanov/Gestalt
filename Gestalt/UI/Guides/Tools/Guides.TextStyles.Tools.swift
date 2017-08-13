@@ -12,47 +12,50 @@ import UIKit
 
 // MARK: - TextStyles struct
 
-public struct TextStyle {
+extension Guides {
     
-    var font: UIFont?
-    var fontColor: UIColor?
-    var fontBackgroundColor: UIColor?
-    
-    var baselineOffset: NSNumber?
-    
-    var strikethroughStyle: NSNumber?
-    var strikethroughColorAttributeName: UIColor?
-    
-    var underlineStyle: NSNumber?
-    var underlineColor: UIColor?
-    
-    var strokeWidth: NSNumber? // NSNumber. In the negative fills the text
-    var strokeColor: UIColor?
-    
-    var textEffectAttributeName: String? // f.e.: NSTextEffectLetterpressStyle as NSString
-    
-    var ligature: NSNumber?
-    var kern: NSNumber?
-    
-    // Paragraph
-    var lineBreakMode: NSLineBreakMode?
-    var allowsDefaultTighteningForTruncation: Bool?
-    var hyphenationFactor: Float? // 0.0—1.0
-    var alignment: NSTextAlignment?
-    var lineHeightMultiple: CGFloat?
-    
-    // Shadow
-    var shadowColor: UIColor?
-    var shadowBlurRadius: CGFloat?
-    var shadowOffset: CGSize?
+    struct TextStyle {
+        
+        var font: UIFont?
+        var fontColor: UIColor?
+        var fontBackgroundColor: UIColor?
+        
+        var baselineOffset: NSNumber?
+        
+        var strikethroughStyle: NSNumber?
+        var strikethroughColorAttributeName: UIColor?
+        
+        var underlineStyle: NSNumber?
+        var underlineColor: UIColor?
+        
+        var strokeWidth: NSNumber? // NSNumber. In the negative fills the text
+        var strokeColor: UIColor?
+        
+        var textEffectAttributeName: String? // f.e.: NSTextEffectLetterpressStyle as NSString
+        
+        var ligature: NSNumber?
+        var kern: NSNumber?
+        
+        // Paragraph
+        var lineBreakMode: NSLineBreakMode?
+        var allowsDefaultTighteningForTruncation: Bool?
+        var hyphenationFactor: Float? // 0.0—1.0
+        var alignment: NSTextAlignment?
+        var lineHeightMultiple: CGFloat?
+        
+        // Shadow
+        var shadowColor: UIColor?
+        var shadowBlurRadius: CGFloat?
+        var shadowOffset: CGSize?
+    }
 }
 
 
 // MARK: - Basic style
 
-extension TextStyle {
+extension Guides.TextStyle {
     
-    static let basic: TextStyle = TextStyle(
+    static let basic: Guides.TextStyle = Guides.TextStyle (
         font: nil,
         fontColor: nil,
         fontBackgroundColor: nil,
@@ -88,10 +91,10 @@ extension TextStyle {
 
 // MARK: - Empty template
 
-extension TextStyle {
-    static var empty: TextStyle {
+extension Guides.TextStyle {
+    static var empty: Guides.TextStyle {
         
-        return TextStyle(
+        return Guides.TextStyle(
             font: nil,
             fontColor: nil,
             fontBackgroundColor: nil,
@@ -132,12 +135,12 @@ extension NSMutableAttributedString {
     
     
     private struct AssociatedKey {
-        static var style: TextStyle? = nil
+        static var style: Guides.TextStyle? = nil
     }
     
-    var style: TextStyle {
+    var style: Guides.TextStyle {
         get {
-            if let result: TextStyle = objc_getAssociatedObject(self, &AssociatedKey.style) as? TextStyle {
+            if let result: Guides.TextStyle = objc_getAssociatedObject(self, &AssociatedKey.style) as? Guides.TextStyle {
                 return result
             } else {
                 let result = self.style
@@ -153,7 +156,7 @@ extension NSMutableAttributedString {
     }
     
     
-    func applyAttributes(ofStyle style: TextStyle) {
+    func applyAttributes(ofStyle style: Guides.TextStyle) {
         
         var attributes = [String:Any]()
         

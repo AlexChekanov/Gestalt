@@ -1,11 +1,3 @@
-//
-//  Guides.TextStyles.swift
-//  Prcess
-//
-//  Created by Alexey Chekanov on 7/21/17.
-//  Copyright © 2017 Alexey Chekanov. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -13,12 +5,7 @@ import UIKit
 // MARK: - TextStyles
 
 
-let accentedColor = UIColor.orange
-let basicDeselectedColor = UIColor.lightGray
-let basicSelectedColor = UIColor.white
-let basicFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
-
-extension TextStyle {
+extension Guides.TextStyle {
     
     // MARK: - Task Headline
     enum taskHeadline {
@@ -27,23 +14,23 @@ extension TextStyle {
         enum planned {
             case selected, deselected
             
-            var style: TextStyle {
+            var style: Guides.TextStyle {
                 
                 switch self {
                 case .selected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicSelectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemSelectedTitle
                     
                     return δStyle
                     }()
                     
                 case.deselected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicDeselectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemDeselectedTitle
                     
                     return δStyle
                     }()
@@ -55,23 +42,23 @@ extension TextStyle {
         enum running {
             case selected, deselected
             
-            var style: TextStyle {
+            var style: Guides.TextStyle {
                 
                 switch self {
                 case .selected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicSelectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemSelectedTitle
                     
                     return δStyle
                     }()
                     
                 case.deselected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicDeselectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemDeselectedTitle
                     
                     return δStyle
                     }()
@@ -83,23 +70,23 @@ extension TextStyle {
         enum suspended {
             case selected, deselected
             
-            var style: TextStyle {
+            var style: Guides.TextStyle {
                 
                 switch self {
                 case .selected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicSelectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemSelectedTitle
                     
                     return δStyle
                     }()
                     
                 case.deselected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicDeselectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemDeselectedTitle
                     
                     return δStyle
                     }()
@@ -111,27 +98,27 @@ extension TextStyle {
         enum completed {
             case selected, deselected
             
-            var style: TextStyle {
+            var style: Guides.TextStyle {
                 
                 switch self {
                 case .selected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicSelectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemSelectedTitle
                     δStyle.strikethroughStyle = 2
-                    δStyle.strikethroughColorAttributeName = basicSelectedColor
+                    δStyle.strikethroughColorAttributeName = Guides.Color.processItemSelectedTitle
                     
                     return δStyle
                     }()
                     
                 case.deselected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicDeselectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemDeselectedTitle
                     δStyle.strikethroughStyle = 2
-                    δStyle.strikethroughColorAttributeName = basicDeselectedColor
+                    δStyle.strikethroughColorAttributeName = Guides.Color.processItemDeselectedTitle
                     
                     
                     return δStyle
@@ -144,23 +131,23 @@ extension TextStyle {
         enum canceled {
             case selected, deselected
             
-            var style: TextStyle {
+            var style: Guides.TextStyle {
                 
                 switch self {
                 case .selected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicSelectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemSelectedTitle
                     
                     return δStyle
                     }()
                     
                 case.deselected: return {
                     
-                    var δStyle = TextStyle.basic
-                    δStyle.font = basicFont
-                    δStyle.fontColor = basicDeselectedColor
+                    var δStyle = Guides.TextStyle.basic
+                    δStyle.font = Guides.Font.taskHeadline
+                    δStyle.fontColor = Guides.Color.processItemDeselectedTitle
                     
                     return δStyle
                     }()
@@ -178,52 +165,52 @@ extension TextStyle {
         case completed
         case canceled
         
-        var style: TextStyle {
+        var style: Guides.TextStyle {
             
             switch self {
             case .planned: return {
                 
-                var δStyle = TextStyle.basic
-                δStyle.font = basicFont
-                δStyle.fontColor = accentedColor
+                var δStyle = Guides.TextStyle.basic
+                δStyle.font = Guides.Font.goalHeadline
+                δStyle.fontColor = Guides.Color.goalText
                 
                 return δStyle
                 }()
                 
             case .running: return {
                 
-                var δStyle = TextStyle.basic
-                δStyle.font = basicFont
-                δStyle.fontColor = accentedColor
+                var δStyle = Guides.TextStyle.basic
+                δStyle.font = Guides.Font.goalHeadline
+                δStyle.fontColor = Guides.Color.goalText
                 
                 return δStyle
                 }()
                 
             case .suspended: return {
                 
-                var δStyle = TextStyle.basic
-                δStyle.font = basicFont
-                δStyle.fontColor = accentedColor
+                var δStyle = Guides.TextStyle.basic
+                δStyle.font = Guides.Font.goalHeadline
+                δStyle.fontColor = Guides.Color.goalText
                 
                 return δStyle
                 }()
                 
             case .completed: return {
                 
-                var δStyle = TextStyle.basic
-                δStyle.font = basicFont
-                δStyle.fontColor = accentedColor
+                var δStyle = Guides.TextStyle.basic
+                δStyle.font = Guides.Font.goalHeadline
+                δStyle.fontColor = Guides.Color.goalText
                 δStyle.strikethroughStyle = 2
-                δStyle.strikethroughColorAttributeName = accentedColor
+                δStyle.strikethroughColorAttributeName = Guides.Color.goalText
                 
                 return δStyle
                 }()
                 
             case .canceled: return {
                 
-                var δStyle = TextStyle.basic
-                δStyle.font = basicFont
-                δStyle.fontColor = accentedColor
+                var δStyle = Guides.TextStyle.basic
+                δStyle.font = Guides.Font.goalHeadline
+                δStyle.fontColor = Guides.Color.goalText
                 
                 return δStyle
                 }()

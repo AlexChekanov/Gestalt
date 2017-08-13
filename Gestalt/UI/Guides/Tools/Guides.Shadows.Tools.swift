@@ -12,13 +12,16 @@ import UIKit
 
 // MARK: Shadows struct
 
-public struct Shadow {
-    
-    let shadowColor: UIColor
-    let shadowOffset: CGSize
-    let shadowRadius: CGFloat
-    let shadowOpacity: Float
-    let masksToBound: Bool?
+extension Guides {
+
+    public struct Shadow {
+        
+        let shadowColor: UIColor
+        let shadowOffset: CGSize
+        let shadowRadius: CGFloat
+        let shadowOpacity: Float
+        let masksToBound: Bool?
+    }
     
 }
 
@@ -29,12 +32,12 @@ extension UIView {
     
     
     private struct AssociatedKey {
-        static var shadowStyle: Shadow? = nil
+        static var shadowStyle: Guides.Shadow? = nil
     }
     
-    var shadowStyle: Shadow {
+    var shadowStyle: Guides.Shadow {
         get {
-            if let result: Shadow = objc_getAssociatedObject(self, &AssociatedKey.shadowStyle) as? Shadow {
+            if let result: Guides.Shadow = objc_getAssociatedObject(self, &AssociatedKey.shadowStyle) as? Guides.Shadow {
                 return result
             } else {
                 let result = self.shadowStyle
@@ -50,7 +53,7 @@ extension UIView {
     }
     
     
-    func applyShadow(ofStyle style: Shadow) {
+    func applyShadow(ofStyle style: Guides.Shadow) {
         self.layer.shadowColor = style.shadowColor.cgColor
         self.layer.shadowOffset = style.shadowOffset
         self.layer.shadowRadius = style.shadowRadius

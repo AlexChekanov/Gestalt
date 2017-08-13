@@ -83,7 +83,7 @@
             <objects>
                 <navigationController id="V7h-Al-Tfs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tCJ-U7-Rve">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tCJ-U7-Rve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -118,7 +118,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="daz-yc-aac"/>
                     <connections>
                         <outlet property="theTitle" destination="6W2-gD-iYB" id="ZKg-PY-OzT"/>

@@ -53,12 +53,15 @@ class RootNavigationCoordinatorImpl: NavigationCoordinator {
         let detailViewController = registry.makeDetailViewController(with: task)
         
         // TODO: add Split navigation support
-
-        rootViewController.showDetailViewController(detailViewController, sender: self)
-    
-        detailViewController.navigationController?.navigationBar.isHidden = false
         
+//        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+//        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+//        
         
+        rootViewController.navigationController?.showDetailViewController(UINavigationController(rootViewController: detailViewController), sender: self)
+        
+//        detailViewController.navigationItem.leftBarButtonItem = rootViewController.splitViewController?.displayModeButtonItem
+//        
         navState = .atDetails
     }
     

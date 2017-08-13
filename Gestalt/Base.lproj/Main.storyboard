@@ -89,7 +89,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mUU-Cq-7uw" kind="relationship" relationship="rootViewController" id="cjL-Z5-d6S"/>
+                        <segue destination="9Rn-ek-D9Q" kind="relationship" relationship="rootViewController" id="60s-Hr-sDx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMr-M5-Wi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,7 +105,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yuU-M1-fX6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BJl-m2-1Qx">
-                        <rect key="frame" x="0.0" y="64" width="415" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W2-gD-iYB">
@@ -126,7 +126,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjy-bF-hzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-364" y="-423"/>
+            <point key="canvasLocation" x="-364" y="-461"/>
+        </scene>
+        <!--Detail View Controller Stub-->
+        <scene sceneID="IBO-Vf-Tm1">
+            <objects>
+                <viewController id="9Rn-ek-D9Q" customClass="DetailViewControllerStub" customModule="Gestalt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fBd-dY-Ld2"/>
+                        <viewControllerLayoutGuide type="bottom" id="zn1-kJ-Ncd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xbo-0N-V2z">
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hXy-h2-re5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNZ-hh-3R1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="354"/>
         </scene>
     </scenes>
 </document>

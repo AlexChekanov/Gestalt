@@ -11,10 +11,10 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         clean()
+        setupView()
+        setupStyle()
         updateData()
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -32,16 +32,19 @@ class DetailViewController: UIViewController {
         self.navigationCoordinator = navigationCoordinator
     }
     
-    func setupView() {
-        
-        self.view.backgroundColor = .orange
-        
-        //self.navigationController?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-        
-    }
-    
     func clean() {
         theTitle.text = ""
+    }
+    
+    func setupView() {
+        
+        self.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        self.navigationItem.leftItemsSupplementBackButton = true
+    }
+    
+    func setupStyle() {
+        
+        self.view.backgroundColor = .orange
     }
     
     func updateData () {

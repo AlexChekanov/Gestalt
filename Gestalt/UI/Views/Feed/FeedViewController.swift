@@ -3,9 +3,8 @@ import Foundation
 import RxSwift
 import RxCocoa
 import RxDataSources
-import Firebase
 
-class FeedViewController: UIViewController, UITableViewDelegate {
+class FeedViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate {
     
     @IBOutlet var tableView: UITableView!
     
@@ -16,6 +15,9 @@ class FeedViewController: UIViewController, UITableViewDelegate {
     fileprivate var bag = DisposeBag()
     
     fileprivate var dataSource = RxTableViewSectionedReloadDataSource<TaskSection>()
+    
+    var searchController = UISearchController(searchResultsController: nil)
+    let refreshControl = UIRefreshControl()
     
     func configure(with presenter: FeedViewControllerPresenter,
                    navigationCoordinator: NavigationCoordinator,
@@ -37,7 +39,29 @@ class FeedViewController: UIViewController, UITableViewDelegate {
         
         initDataSource()
         initTableView()
+        
+        applyStyle()
+        
+        // Setup the Search Controller
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.change(textFont: nil, textColor: Guides.Color.darkText, textFieldColor: Guides.Color.searchField)
+        
+        // Setup the Refresh Controller
+        refreshControl.backgroundColor = Guides.Color.background
+        refreshControl.addTarget(self, action: #selector(self.updateData), for: .valueChanged)
+        
+        /* self.refreshControl?.attributedTitle = NSAttributedString(string: "Refreshing...") */
+        
+        refreshControl.tintColor = Guides.Color.darkElement
+        tableView.addSubview(refreshControl)
+        
     }
+    
+    
     
     func newDataReceived(from source: DataSource) {
         //Toast(text: "New Data from \(source)").show()
@@ -46,6 +70,8 @@ class FeedViewController: UIViewController, UITableViewDelegate {
     
     @IBAction func updateData(_ sender: Any) {
         presenter.makeSomeDataChange()
+        
+        refreshControl.endRefreshing()
     }
 }
 
@@ -91,6 +117,21 @@ extension FeedViewController {
     }
 }
 
+//MARK: - UISearchResultsUpdating
+
+extension FeedViewController: UISearchResultsUpdating {
+    // MARK: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+        // TODO
+    }
+}
+
+//extension FeedViewController: RefreshProviderDelegate {
+//    // MARK: - UISearchResultsUpdating Delegate
+//    func updateSearchResults(for searchController: UISearchController) {
+//        // TODO
+//    }
+//}
 
 
 

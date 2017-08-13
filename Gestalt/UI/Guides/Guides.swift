@@ -38,6 +38,7 @@ public struct Guides {
         UITabBar.appearance().tintColor = Guides.Color.tabBarElementsTint
         UITabBar.appearance().barTintColor = Guides.Color.tabBarTint
         UITabBar.appearance().isTranslucent = Guides.Color.tabBarIsTranslucent
+        
     }
     
 }

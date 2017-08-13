@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,20 +22,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q8O-98-0rE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q8O-98-0rE">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="414"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bv-Es-Rdk" customClass="HomeAddButton" customModule="Gestalt" customModuleProvider="target">
+                                <rect key="frame" x="240" y="334" width="56" height="56"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7bv-Es-Rdk" secondAttribute="height" multiplier="1:1" id="ijz-b0-dWz"/>
+                                    <constraint firstAttribute="height" constant="56" id="opp-gf-Myd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" image="plus"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="q8O-98-0rE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CTk-3G-iW8"/>
                             <constraint firstItem="q8O-98-0rE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DOF-Pf-Hbt"/>
+                            <constraint firstAttribute="trailing" secondItem="7bv-Es-Rdk" secondAttribute="trailing" constant="24" id="Eyy-bR-4VN"/>
                             <constraint firstAttribute="trailing" secondItem="q8O-98-0rE" secondAttribute="trailing" id="KRP-as-4aT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q8O-98-0rE" secondAttribute="bottom" id="RFd-L6-Lcn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7bv-Es-Rdk" secondAttribute="bottom" constant="24" id="jGI-cx-qEB"/>
+                            <constraint firstItem="7bv-Es-Rdk" firstAttribute="width" secondItem="7bv-Es-Rdk" secondAttribute="height" multiplier="1:1" id="vsa-OZ-JmA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i0q-KD-3DZ">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="Mpv-k1-izW">
+                            <rect key="frame" x="96" y="5.5" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="P2f-H5-ijX">
+                                    <rect key="frame" x="0.0" y="4" width="128" height="25"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="P2f-H5-ijX" firstAttribute="leading" secondItem="Mpv-k1-izW" secondAttribute="leading" id="2g8-W1-AH3"/>
+                                <constraint firstAttribute="trailing" secondItem="P2f-H5-ijX" secondAttribute="trailing" id="LdS-dp-aIN"/>
+                                <constraint firstItem="P2f-H5-ijX" firstAttribute="top" secondItem="Mpv-k1-izW" secondAttribute="top" constant="4" id="TsO-Ak-5A3"/>
+                                <constraint firstAttribute="bottom" secondItem="P2f-H5-ijX" secondAttribute="bottom" constant="4" id="lbm-mR-FTk"/>
+                            </constraints>
+                        </view>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="UpS-wc-lpB">
                             <connections>
                                 <action selector="updateData:" destination="BYZ-38-t0r" id="V5I-EQ-WmF"/>
@@ -83,7 +114,7 @@
             <objects>
                 <navigationController id="V7h-Al-Tfs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tCJ-U7-Rve">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tCJ-U7-Rve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -147,4 +178,8 @@
             <point key="canvasLocation" x="-364" y="354"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="97" height="78"/>
+        <image name="plus" width="128" height="128"/>
+    </resources>
 </document>

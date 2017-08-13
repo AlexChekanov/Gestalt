@@ -67,6 +67,8 @@
 		3B7EDB581F40B94200C1E030 /* Guides.Shadows.Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDB511F40B94200C1E030 /* Guides.Shadows.Tools.swift */; };
 		3B7EDB591F40B94200C1E030 /* Guides.TextStyles.Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDB521F40B94200C1E030 /* Guides.TextStyles.Tools.swift */; };
 		3B7EDB5F1F40DE0600C1E030 /* Guides.Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDB5E1F40DE0600C1E030 /* Guides.Fonts.swift */; };
+		3B7EDB631F40F03E00C1E030 /* HomeAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDB621F40F03E00C1E030 /* HomeAddButton.swift */; };
+		3B7EDB651F40FC6900C1E030 /* FeedViewControllerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDB641F40FC6900C1E030 /* FeedViewControllerStyle.swift */; };
 		E995DD533684219EEA432F67 /* Pods_Gestalt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,8 @@
 		3B7EDB511F40B94200C1E030 /* Guides.Shadows.Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guides.Shadows.Tools.swift; sourceTree = "<group>"; };
 		3B7EDB521F40B94200C1E030 /* Guides.TextStyles.Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guides.TextStyles.Tools.swift; sourceTree = "<group>"; };
 		3B7EDB5E1F40DE0600C1E030 /* Guides.Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guides.Fonts.swift; sourceTree = "<group>"; };
+		3B7EDB621F40F03E00C1E030 /* HomeAddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAddButton.swift; sourceTree = "<group>"; };
+		3B7EDB641F40FC6900C1E030 /* FeedViewControllerStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewControllerStyle.swift; sourceTree = "<group>"; };
 		509820DDF305EBAEAAAFF3C6 /* Pods-Gestalt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.debug.xcconfig"; sourceTree = "<group>"; };
 		79CB998A8B86C3FD4DD0F9C1 /* Pods-Gestalt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.release.xcconfig"; sourceTree = "<group>"; };
 		E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gestalt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -311,6 +315,7 @@
 			children = (
 				3B7EDAEC1F40ADDD00C1E030 /* Card */,
 				3B7EDAF01F40ADDD00C1E030 /* FeedViewController.swift */,
+				3B7EDB641F40FC6900C1E030 /* FeedViewControllerStyle.swift */,
 				3B7EDAF11F40ADDD00C1E030 /* FeedViewControllerPresenter.swift */,
 			);
 			path = Feed;
@@ -372,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7EDB4B1F40B94200C1E030 /* Guides.swift */,
+				3B7EDB611F40F02E00C1E030 /* Elements */,
 				3B7EDB5D1F40DE0600C1E030 /* Fonts */,
 				3B7EDB491F40B94200C1E030 /* Colors */,
 				3B7EDB4C1F40B94200C1E030 /* Shadows */,
@@ -420,6 +426,14 @@
 				3B7EDB5E1F40DE0600C1E030 /* Guides.Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3B7EDB611F40F02E00C1E030 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EDB621F40F03E00C1E030 /* HomeAddButton.swift */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 		AB0F3FF0B17D1A32FBFC1A5F /* Pods */ = {
@@ -583,6 +597,7 @@
 			files = (
 				3B7EDB5F1F40DE0600C1E030 /* Guides.Fonts.swift in Sources */,
 				3B7EDACC1F40AD5B00C1E030 /* ModelLayer.swift in Sources */,
+				3B7EDB631F40F03E00C1E030 /* HomeAddButton.swift in Sources */,
 				3B7EDACD1F40AD5B00C1E030 /* NetworkLayer.swift in Sources */,
 				3B7EDB171F40ADF900C1E030 /* CGFloat+degreeToRad.swift in Sources */,
 				3B7EDB181F40ADF900C1E030 /* Date+userFriendly.swift in Sources */,
@@ -603,6 +618,7 @@
 				3B7EDB241F40ADF900C1E030 /* UIView+anchors.swift in Sources */,
 				3B7EDB261F40ADF900C1E030 /* UIView+fromNib.swift in Sources */,
 				3B7EDB561F40B94200C1E030 /* Guides.Shadows.swift in Sources */,
+				3B7EDB651F40FC6900C1E030 /* FeedViewControllerStyle.swift in Sources */,
 				3B7EDB021F40ADDD00C1E030 /* FeedViewController.swift in Sources */,
 				3B7EDAFB1F40ADDD00C1E030 /* ProcessCollectionViewControllerPresenter.swift in Sources */,
 				3B7EDAD61F40ADB500C1E030 /* DependencyRegistry.swift in Sources */,

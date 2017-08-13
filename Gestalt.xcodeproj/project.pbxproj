@@ -36,14 +36,14 @@
 		3B17BD7E1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD7D1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift */; };
 		3B17BD801F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD7F1F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift */; };
 		3B17BD821F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD811F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift */; };
-		3B17BD871F37D8CB00F109D6 /* GlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD841F37D8CB00F109D6 /* GlobalEnums.swift */; };
-		3B17BD881F37D8CB00F109D6 /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD851F37D8CB00F109D6 /* RowType.swift */; };
-		3B17BD891F37D8CB00F109D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17BD861F37D8CB00F109D6 /* Extensions.swift */; };
 		3B7EDA081F3B72CF00C1E030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B7EDA071F3B72CF00C1E030 /* GoogleService-Info.plist */; };
 		3B7EDA0B1F3E072600C1E030 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA0A1F3E072600C1E030 /* DataLayer.swift */; };
 		3B7EDA0F1F3E073600C1E030 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA0C1F3E073600C1E030 /* DataModel.xcdatamodeld */; };
 		3B7EDA101F3E073600C1E030 /* Task+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA0E1F3E073600C1E030 /* Task+extensions.swift */; };
 		3B7EDA571F40A1AB00C1E030 /* DetailViewControllerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA561F40A1AB00C1E030 /* DetailViewControllerStub.swift */; };
+		3B7EDA5D1F40A3AE00C1E030 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA5A1F40A3AE00C1E030 /* Extensions.swift */; };
+		3B7EDA5E1F40A3AE00C1E030 /* GlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA5B1F40A3AE00C1E030 /* GlobalEnums.swift */; };
+		3B7EDA5F1F40A3AE00C1E030 /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EDA5C1F40A3AE00C1E030 /* RowType.swift */; };
 		E995DD533684219EEA432F67 /* Pods_Gestalt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,16 +78,16 @@
 		3B17BD7B1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BodyTableViewControllerPresenter.swift; path = UI/Details/Body/BodyTableViewControllerPresenter.swift; sourceTree = "<group>"; };
 		3B17BD7D1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionTableViewCellPresenter.swift; path = UI/Details/Body/ActionTableViewCellPresenter.swift; sourceTree = "<group>"; };
 		3B17BD7F1F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepCollectionViewCellPresenter.swift; path = UI/Details/Process/StepCollectionViewCellPresenter.swift; sourceTree = "<group>"; };
-		3B17BD811F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessCollectionViewControllerPresenter.swift; sourceTree = "<group>"; };
-		3B17BD841F37D8CB00F109D6 /* GlobalEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalEnums.swift; sourceTree = "<group>"; };
-		3B17BD851F37D8CB00F109D6 /* RowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowType.swift; sourceTree = "<group>"; };
-		3B17BD861F37D8CB00F109D6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3B17BD811F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcessCollectionViewControllerPresenter.swift; path = UI/Details/Process/ProcessCollectionViewControllerPresenter.swift; sourceTree = "<group>"; };
 		3B7EDA071F3B72CF00C1E030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B7EDA091F3B7B7200C1E030 /* Gestalt. ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Gestalt. ToDo.txt"; path = "../../../Library/Mobile Documents/27N4MQEA55~pro~writer/Documents/Gestalt. ToDo.txt"; sourceTree = "<group>"; };
 		3B7EDA0A1F3E072600C1E030 /* DataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataLayer.swift; path = ModelLayer/Data/DataLayer.swift; sourceTree = "<group>"; };
 		3B7EDA0D1F3E073600C1E030 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		3B7EDA0E1F3E073600C1E030 /* Task+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+extensions.swift"; path = "ModelLayer/Data/Task+extensions.swift"; sourceTree = "<group>"; };
 		3B7EDA561F40A1AB00C1E030 /* DetailViewControllerStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewControllerStub.swift; path = UI/Details/DetailViewControllerStub.swift; sourceTree = "<group>"; };
+		3B7EDA5A1F40A3AE00C1E030 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SupportingClasses/Extensions.swift; sourceTree = "<group>"; };
+		3B7EDA5B1F40A3AE00C1E030 /* GlobalEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalEnums.swift; path = SupportingClasses/GlobalEnums.swift; sourceTree = "<group>"; };
+		3B7EDA5C1F40A3AE00C1E030 /* RowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = SupportingClasses/RowType.swift; sourceTree = "<group>"; };
 		509820DDF305EBAEAAAFF3C6 /* Pods-Gestalt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.debug.xcconfig"; sourceTree = "<group>"; };
 		79CB998A8B86C3FD4DD0F9C1 /* Pods-Gestalt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gestalt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gestalt/Pods-Gestalt.release.xcconfig"; sourceTree = "<group>"; };
 		E06F7376B5E937BD0B142997 /* Pods_Gestalt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gestalt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,9 +298,9 @@
 		3B17BD831F37D8A600F109D6 /* SupportingClasses */ = {
 			isa = PBXGroup;
 			children = (
-				3B17BD841F37D8CB00F109D6 /* GlobalEnums.swift */,
-				3B17BD851F37D8CB00F109D6 /* RowType.swift */,
-				3B17BD861F37D8CB00F109D6 /* Extensions.swift */,
+				3B7EDA5A1F40A3AE00C1E030 /* Extensions.swift */,
+				3B7EDA5B1F40A3AE00C1E030 /* GlobalEnums.swift */,
+				3B7EDA5C1F40A3AE00C1E030 /* RowType.swift */,
 			);
 			name = SupportingClasses;
 			sourceTree = "<group>";
@@ -464,25 +464,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B17BD871F37D8CB00F109D6 /* GlobalEnums.swift in Sources */,
 				3B7EDA0B1F3E072600C1E030 /* DataLayer.swift in Sources */,
 				3B17BD821F37AE3E00F109D6 /* ProcessCollectionViewControllerPresenter.swift in Sources */,
 				3B17BD461F37A42700F109D6 /* NetworkLayer.swift in Sources */,
 				3B17BD7C1F37ADE900F109D6 /* BodyTableViewControllerPresenter.swift in Sources */,
 				3B17BD7A1F37ACCF00F109D6 /* TaskDTO.swift in Sources */,
 				3B17BD5E1F37A71400F109D6 /* CardTableViewCellPresenter.swift in Sources */,
-				3B17BD891F37D8CB00F109D6 /* Extensions.swift in Sources */,
 				3B17BD781F37AA2900F109D6 /* SwinjectStoryboard+Extensions.swift in Sources */,
 				3B17BD3A1F37A34B00F109D6 /* TranslationLayer.swift in Sources */,
+				3B7EDA5F1F40A3AE00C1E030 /* RowType.swift in Sources */,
 				3B17BD5A1F37A70700F109D6 /* FeedViewController.swift in Sources */,
 				3B7EDA571F40A1AB00C1E030 /* DetailViewControllerStub.swift in Sources */,
 				3B17BD381F37A2FA00F109D6 /* ModelLayer.swift in Sources */,
 				3B17BD761F37AA0600F109D6 /* DependencyRegistry.swift in Sources */,
+				3B7EDA5E1F40A3AE00C1E030 /* GlobalEnums.swift in Sources */,
 				3B17BD5F1F37A71400F109D6 /* CardTableViewCell.swift in Sources */,
 				3B17BD171F379D4F00F109D6 /* AppDelegate.swift in Sources */,
 				3B17BD801F37AE2400F109D6 /* StepCollectionViewCellPresenter.swift in Sources */,
 				3B17BD7E1F37AE0B00F109D6 /* ActionTableViewCellPresenter.swift in Sources */,
-				3B17BD881F37D8CB00F109D6 /* RowType.swift in Sources */,
 				3B17BD691F37A92700F109D6 /* StepCollectionViewCell.swift in Sources */,
 				3B7EDA0F1F3E073600C1E030 /* DataModel.xcdatamodeld in Sources */,
 				3B17BD701F37A9B700F109D6 /* ActionTableViewCell.swift in Sources */,
@@ -494,6 +493,7 @@
 				3B17BD741F37A9EF00F109D6 /* RootNavigationCoordinator.swift in Sources */,
 				3B17BD3C1F37A36500F109D6 /* TaskTranslator.swift in Sources */,
 				3B7EDA101F3E073600C1E030 /* Task+extensions.swift in Sources */,
+				3B7EDA5D1F40A3AE00C1E030 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

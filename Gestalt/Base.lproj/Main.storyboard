@@ -83,7 +83,7 @@
             <objects>
                 <navigationController id="V7h-Al-Tfs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tCJ-U7-Rve">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tCJ-U7-Rve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
